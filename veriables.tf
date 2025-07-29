@@ -1,15 +1,9 @@
-variable "region" {
-  description = "AWS region to deploy resources"
+variable "public_instance_type" {
+  description = "Instance type for public node group"
   type        = string
 }
 
-variable "cluster_name" {
-  description = "EKS Cluster name"
+variable "private_instance_type" {
+  description = "Instance type for private node group"
   type        = string
-}
-
-variable "instance_type" {
-  description = "Instance type for EKS worker nodes"
-  type        = string
-  default     = "t3.medium"
 }
